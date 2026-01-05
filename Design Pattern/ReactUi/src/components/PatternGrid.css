@@ -1,0 +1,62 @@
+.pattern-grid-container {
+  padding: 2rem 0;
+}
+
+.pattern-card {
+  background: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow: hidden;
+}
+
+.pattern-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.pattern-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.pattern-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.pattern-card:hover .pattern-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.pattern-card .card-title {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.pattern-card .card-text {
+  min-height: 60px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pattern-card .btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pattern-card:hover .btn-primary {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+

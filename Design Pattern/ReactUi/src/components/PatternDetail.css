@@ -1,0 +1,106 @@
+.pattern-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: white;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pattern-detail-card {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.pattern-detail-card .card-header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.pattern-detail-icon {
+  font-size: 5rem;
+  opacity: 0.9;
+}
+
+.pattern-info-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+.info-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.code-example {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.code-example pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.use-case-list {
+  list-style: none;
+  padding: 0;
+}
+
+.use-case-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: padding-left 0.3s ease;
+}
+
+.use-case-list li:hover {
+  padding-left: 10px;
+}
+
+.use-case-list li:before {
+  content: "✓ ";
+  color: #4caf50;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.use-case-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .pattern-detail-container {
+    padding: 1rem;
+  }
+  
+  .pattern-detail-icon {
+    font-size: 3rem;
+  }
+  
+  .pattern-info-sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
