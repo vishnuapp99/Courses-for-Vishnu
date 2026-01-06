@@ -1,0 +1,63 @@
+.metro-time-section {
+  padding: 2rem 0;
+}
+
+.metro-rule-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 1rem 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.metro-activity-card {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.metro-activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.activity-icon {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.metro-activity-card ul li {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.dont-do-section {
+  background: #fff3cd;
+  border-radius: 15px;
+  padding: 2rem;
+  border-left: 5px solid #ffc107;
+  margin-top: 2rem;
+}
+
+.dont-do-item {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.motivation-box {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
