@@ -1,0 +1,238 @@
+.discovery-questions {
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.definition-question {
+  margin: 3rem 0;
+}
+
+.definition-card {
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 2px solid var(--accent-blue);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.definition-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.definition-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.question-section {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.question-section:hover {
+  border-color: var(--accent-blue);
+}
+
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.section-header:hover {
+  background: var(--bg-tertiary);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+}
+
+.section-title h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.section-content {
+  padding: 0 1.5rem 1.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.questions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questions-list > li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.questions-list > li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+  font-size: 1.5rem;
+}
+
+.questions-list > li strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sub-items {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.sub-items li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.sub-items li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+}
+
+.next-steps {
+  margin: 4rem 0;
+}
+
+.next-steps-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  border: 1px solid var(--accent-blue);
+  border-radius: 16px;
+  padding: 2.5rem;
+}
+
+.next-steps-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.next-steps-card > p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.next-steps-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.next-steps-card ul li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.next-steps-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.motivation {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  color: var(--text-primary) !important;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .definition-text {
+    font-size: 1.1rem;
+  }
+
+  .section-title h3 {
+    font-size: 1.1rem;
+  }
+}
